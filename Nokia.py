@@ -25,7 +25,7 @@ menu_page = int(input("Choose a menu option: "))
 match menu_page:
     case 1:
         print("Phonebook")
-        phone_book = int(input("Select Phonebook Option (1-10): "))
+        phone_book = int(input("Select Phonebook Option: "))
         match phone_book:
             case 1:
                 print("Search")
@@ -80,7 +80,7 @@ match menu_page:
         7 -> Call cost settings
         8 -> Prepaid credit
         """)
-        callRegister = int(input("Select Call Register Option: "))
+        callRegister = int(input("Select a Call Register Option: "))
         match callRegister:
             case 1:
                 print("Missed calls")
@@ -100,7 +100,7 @@ match menu_page:
                 5 -> Clear timers
                 """)
             case 6:
-                print("Show call costs:")
+                print("Call costs:")
                 print("""
                 1 -> Last call cost
                 2 -> All calls' cost
@@ -139,7 +139,7 @@ match menu_page:
         3 -> Security settings
         4 -> Restore factory settings
         """)
-        settings = int(input("Choose Settings Option: "))
+        settings = int(input("Choose a Settings Option: "))
         match settings:
             case 1:
                 print("Call settings:")
@@ -174,7 +174,7 @@ match menu_page:
             case 4:
                 print("Restore factory settings")
             case _:
-                print("Invalid Settings Option")
+                print("Invalid Settings Selection")
 
     case 7:
         print("Call Divert")
